@@ -5,12 +5,13 @@ const bodyParser = require('body-parser');
 const Developer = require('./api/models/models');
 const routes = require('./api/routes/routes');
 
-const app = express();
-const port= process.env.PORT  || 3000;
+const app = express(); //creating instance of express
+const port= process.env.PORT  || 3000; // defining the port for the server to run on
 
 mongoose.Promise = global.Promise;
+mongoose.set('useNewUrlParser', true);
 
-mongoose.connect('mongodb://localhost:27017/DevelopersDB',{useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/DevelopersDB',{useNewUrlParser: true}); //connecting to local mongodb server
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(bodyParser.json());
@@ -26,6 +27,7 @@ app.use((req,res)=>{
 
 })
 
+//make the app to listen and watch on the difined port
 app.listen(port,()=>{
     console.log(`server running on port ${port}`);
 });

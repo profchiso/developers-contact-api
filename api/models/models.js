@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
  const Schema = mongoose.Schema;
+
+ //defining the developers document schema
 const devloperSchema = new Schema({
     fullname:{
         type: String,
@@ -21,7 +23,13 @@ const devloperSchema = new Schema({
         type: Date,
         default: Date.now
 
-    }
+    },
+    
+        dateModified:{
+            type: Date,
+            default: Date.now
+        }
+    
 });
-
+ 
 module.exports = mongoose.model('developers',devloperSchema );
