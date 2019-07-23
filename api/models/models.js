@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
  const Schema = mongoose.Schema;
-const devloperSchema = new schema({
+const devloperSchema = new Schema({
     fullname:{
         type: String,
         required: "devloper's name required"
@@ -24,4 +24,4 @@ const devloperSchema = new schema({
     }
 });
 
-module.exports = mongoose.model('developers',Schema);
+module.exports = mongoose.model('developers',devloperSchema );
