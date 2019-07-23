@@ -16,28 +16,52 @@ What things you need to install the software and how to install them
  - mongoose
  - body-parser
 ```
+```
+2.  you  also need 
+ - mongodb installed in your
+ - node
+ - Postman or any other rest client
+ - then a browser(optional though)
+```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get the app   running a development env
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
 
 ```
-until finished
+use git bash to clone this repository "https://github.com/profchiso/developers-contact-api.git"
+```
+open the cloned project with git
+ - install the dependencies using the command "npm install express body-parser mongoose
+ - startup the mongodb your terminal app using the command "mongod"
+ - open the clonned project in an terminal and run the server using " node server.js" command;
+ - then you are read to perform certain operations in the developers contact api 
+
+```
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Basic routes of the Api
+```
+        GET    /developers
+        GET    /developers/stack/front-end or back-end or full-stack
+        GET    /developers/1
+        POST   /developers
+        PUT    /developers/1
+        PATCH  /developers/1
+        DELETE /developers/1
+```
 
-Explain how to run the automated tests for this system
+
+## Running on postman
+```
+    1. To  view all developers
+       Type this url  http://localhost:3000/developers
+       in POSTMAN Address bar and click on send
+       Note the HTTP Method must be GET             
+```
 
 ### Break down into end to end tests
 
