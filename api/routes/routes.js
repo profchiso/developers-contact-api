@@ -11,8 +11,8 @@ module.exports = (app)=>{
     //.patch(developers.update_some_developers_details)
     .delete(developers.delete_a_developer);
 
-    app.route('/developers/:developersStack')
-    .get(developers.list_all_devloper_in_same_stack);
+    app.route('/developers/stack/:developersStack')
+    .get(developers.list_all_developer_in_same_stack);
 
     
 };

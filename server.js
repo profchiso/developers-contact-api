@@ -19,10 +19,10 @@ routes(app);
 app.get('/',(req,res)=>{res.send('Welcome to the home route')});
 //handling some http error that may occur
 app.use((req,res)=>{
-    res.status(404).send({url: req.originalUrl + 'Not found'});
-    res.status(400).send({url: req.originalUrl + 'Bad Request'});
-    res.status(403).send({url: req.originalUrl + 'Forbidden'});
-    res.status(401).send({url: req.originalUrl + 'Unauthorized'});
+    res.status(404).send({url: req.originalUrl + ' 404 Not found'});
+    res.status(400).send({url: req.originalUrl + ' 400 Bad Request'});
+    res.status(403).send({url: req.originalUrl + ' 403 Forbidden'});
+    res.status(401).send({url: req.originalUrl + ' 401 Unauthorized'});
 
 })
 

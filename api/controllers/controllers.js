@@ -67,7 +67,7 @@ exports.delete_a_developer =(req,res)=>{
 
 //controller to view all developer in a particular Stack
 
-exports.list_all_devloper_in_same_stack= (req,res)=>{
+exports.list_all_developer_in_same_stack= (req,res)=>{
     Developer.find({stack: req.params.developersStack},(err,stack)=>{
         if(!err){
             res.json(stack);
