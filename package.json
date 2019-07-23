@@ -1,0 +1,21 @@
+{
+  "name": "developersapi",
+  "version": "1.0.0",
+  "description": "simple API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "restful"
+  ],
+  "author": "okorie chinedu sunday",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
