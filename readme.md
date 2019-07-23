@@ -18,7 +18,7 @@ What things you need to install the software and how to install them
 ```
 ```
 2.  you  also need 
- - mongodb installed in your
+ - mongodb installed in your PC
  - node
  - Postman or any other rest client
  - then a browser(optional though)
@@ -57,59 +57,81 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running on postman
 ```
-    1. To  view all developers
+ 1. To  view all developers
        Type this url  http://localhost:3000/developers
        in POSTMAN Address bar and click on send
        Note the HTTP Method must be GET             
 ```
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+ 2. To  view a developer with id
+        Type this url http://localhost:3000/developers/id
+        in POSTMAN Address bar and click on send, where the id is any of the developers id
+        e.g http://localhost:3000/developers/1
+        Note the http method must be GET       
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+  3. To add a developer
+        Type this url http://localhost:3000/developers 
+        in POSTMAN Address bar ,
+        below the url in POSTMAN app select  BODY
+        below the Body select x-www-form-urlencoded 
+        then enter the fieldnames  in the KEY and the values in the VALUE
+         Note the http method must be POST
 ```
+```
+  4. To update some fields  say fullname, stack of a developer with a given id</h6>
+     Type this url http://localhost:3000/developers/id 
+     in POSTMAN Address bar ,
+     below the url in POSTMAN app select Body
+     below the Body select x-www-form-urlencoded
+    then enter the field name that you want to update in the KEY and the value you want it to be changed to in the VALUE
+    where the id is any of the developers id
+    ie.g http://localhost:3000/developers/1
+    Note the http method must be PATCH
+```
+```
+ 5.  To update all fields of a developer with a given id</h6>
+        Type this url http://localhost:3000/developers/id
+        in POSTMAN Address bar ,
+         below the url in POSTMAN app select Body
+         below the Body select x-www-form-urlencoded 
+         then enter the  all the fields in the KEYand the value you want them to be changed to in the VALUE
+        then click send
+        where the id is any of the developers id
+        e.g http://localhost:3000/developers/1
+         Note the http method must be PUT
+```
+```
+ 6. To delete a developer with a given id
+         Type this url http://localhost:3000/developers/id 
+         in POSTMAN Address bar ,
+         then click send
+         where the id is an of the developers
+         e.g http://localhost:3000/developers/1
+         note the http method must be DELETE
+```
+```
+7.  You can also search a developer according to their stack 
+        Type this url http://localhost:3000/developers/stack/stackName
+        in POSTMAN Address bar ,
+        then click send
+        where the stackName can be any of front-end,back-end, full-stack
+        e.g http://localhost:3000/developers/stack/full-stack
+        Note the http method must be GET
+```
+## Github url
+ https://github.com/profchiso/developers-contact-api.git
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
+ This is version 1.0.0 of the api
+ 
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## Author
+* **okorie chinedu sunady** 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* To God be the glory
+
 
