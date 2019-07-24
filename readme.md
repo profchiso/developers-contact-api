@@ -4,7 +4,7 @@ A simple developers contact Api
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ What things you need to install the software and how to install them
  - body-parser
 ```
 ```
-2.  you  also need 
+2. You  also need 
  - mongodb installed in your PC
  - node
  - Postman or any other rest client
@@ -34,24 +34,23 @@ use git bash to clone this repository "https://github.com/profchiso/developers-c
 ```
 open the cloned project with git
  - install the dependencies using the command "npm install express body-parser mongoose
- - startup the mongodb your terminal app using the command "mongod"
+ - startup the mongodb on your terminal app using the command "mongod"
  - open the clonned project in an terminal and run the server using " node server.js" command;
  - then you are read to perform certain operations in the developers contact api 
 
 ```
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Basic routes of the Api
 ```
         GET    /developers
         GET    /developers/stack/front-end or back-end or full-stack
-        GET    /developers/1
+        GET    /developers/id
         POST   /developers
-        PUT    /developers/1
-        PATCH  /developers/1
-        DELETE /developers/1
+        PUT    /developers/id
+        PATCH  /developers/id
+        DELETE /developers/id
+
+        where the id is any of the developers id  eg. "5d370ab67ced9f344867784d"
 ```
 
 
@@ -66,7 +65,7 @@ End with an example of getting some data out of the system or using it for a lit
  2. To  view a developer with id
         Type this url http://localhost:3000/developers/id
         in POSTMAN Address bar and click on send, where the id is any of the developers id
-        e.g http://localhost:3000/developers/1
+        e.g http://localhost:3000/developers/5d370ab67ced9f344867784d
         Note the http method must be GET       
 ```
 ```
@@ -86,7 +85,7 @@ End with an example of getting some data out of the system or using it for a lit
      below the Body select x-www-form-urlencoded
     then enter the field name that you want to update in the KEY and the value you want it to be changed to in the VALUE
     where the id is any of the developers id
-    ie.g http://localhost:3000/developers/1
+    ie.g http://localhost:3000/developers/5d370ab67ced9f344867784d
     Note the http method must be PATCH
 ```
 ```
@@ -98,7 +97,7 @@ End with an example of getting some data out of the system or using it for a lit
          then enter the  all the fields in the KEYand the value you want them to be changed to in the VALUE
         then click send
         where the id is any of the developers id
-        e.g http://localhost:3000/developers/1
+        e.g http://localhost:3000/developers/5d370ab67ced9f344867784d
          Note the http method must be PUT
 ```
 ```
@@ -107,7 +106,7 @@ End with an example of getting some data out of the system or using it for a lit
          in POSTMAN Address bar ,
          then click send
          where the id is an of the developers
-         e.g http://localhost:3000/developers/1
+         e.g http://localhost:3000/developers/5d370ab67ced9f344867784d
          note the http method must be DELETE
 ```
 ```
